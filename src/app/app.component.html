@@ -3,4 +3,16 @@
   Start editing to see some magic happen :)
 </p> -->
 
-<app-scroller></app-scroller>
+<!-- <app-scroller></app-scroller> -->
+<ul>
+  <li *ngFor="let i of arr">{{i}}</li>
+</ul>
+
+<select>
+  <option *ngFor="let i of arr">{{i}}</option>
+</select>
+
+<div>
+  <p *ngIf="islogin; else demo1">Logged In</p>
+  <ng-template #demo1>not logged in </ng-template>
+</div>
