@@ -11,4 +11,12 @@ export class AppComponent {
   arr = ["Apple", "mango", "banana", "abcd", "pqrst"];
 
   islogin = false;
+
+  hello() {
+    if (this.islogin == true) {
+      this.islogin = false;
+    } else {
+      this.islogin = true;
+    }
+  }
 }
