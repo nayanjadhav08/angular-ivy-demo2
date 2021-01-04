@@ -2,10 +2,14 @@
 <p>
   Start editing to see some magic happen :)
 </p> -->
-
+<app-login></app-login>
 <!-- <app-scroller></app-scroller> -->
+
+
+
+
 <ul>
-  <li *ngFor="let i of arr">{{i}}</li>
+	<li *ngFor="let i of arr">{{i}}</li>
 </ul>
 
 <select>
@@ -13,8 +17,8 @@
 </select>
 
 <div>
-  <p *ngIf="islogin; else demo1">Logged In</p>
-  <ng-template #demo1>not logged in </ng-template>
+	<p *ngIf="islogin; else demo1">Logged In</p>
+	<ng-template #demo1>not logged in </ng-template>
 </div>
 
 <input type="text" />
@@ -23,9 +27,9 @@
 <p>login count : {{count}}</p>
 
 <style>
-  .pd {
-    margin: 10px;
-  }
+	.pd {
+		margin: 10px;
+	}
 </style>
 <button class="btn btn-success pd" (click)="btn1()">btn 1</button>
 <button class="btn btn-success pd" (click)="btn2()">btn 2</button>

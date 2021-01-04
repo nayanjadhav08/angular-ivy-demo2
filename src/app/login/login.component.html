@@ -1,3 +1,14 @@
 <p>
-login works!
+	This is data binding example ;
 </p>
+
+<p>name :</p> <input type="text" [(ngModel)]="myname">
+<br/>
+<p>you typed - {{myname | uppercase}} </p>
+
+
+<form #myform="ngForm" (ngSubmit)="formHello(myform.value)">
+	<input type="text" name="username" ngModel />
+	<input type="text" name="pass" ngModel />
+	<input type="submit"/>
+</form>

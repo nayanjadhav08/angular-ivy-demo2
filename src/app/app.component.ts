@@ -6,6 +6,8 @@ import { Component, VERSION } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
+  myname = "";
+
   name = "Angular " + VERSION.major;
   count = 1;
   arr = ["Apple", "mango", "banana", "abcd", "pqrst"];
